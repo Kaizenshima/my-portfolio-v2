@@ -19,7 +19,6 @@ const ProjectSection = () => {
             description={project.description}
             imgURL={project.imgUrl}
             gitUrl={project.gitUrl}
-            previewUrl={project.previewUrl}
           />
         ))}
       </div>

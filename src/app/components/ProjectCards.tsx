@@ -7,14 +7,14 @@ interface ProjectCardsProps {
   title: string;
   description: string;
   gitUrl: string;
-  previewUrl: string;
+
 }
 const ProjectCards: React.FC<ProjectCardsProps> = ({
   imgURL,
   title,
   description,
   gitUrl,
-  previewUrl,
+
 }) => {
   return (
     <div>

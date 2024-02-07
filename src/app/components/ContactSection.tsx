@@ -13,7 +13,7 @@ const ContactSection = () => {
             Get In Touch
           </h2>
           <p className="text-slate-200 text-lg sm:text-xl">
-            Let's work together
+            Let&apos;s work together
           </p>
         </div>
         <div className="col-span-6 mt-6">
