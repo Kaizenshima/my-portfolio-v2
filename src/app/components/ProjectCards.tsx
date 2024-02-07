@@ -39,18 +39,6 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({
                 "
             />
           </Link>
-          <Link
-            href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BB] hover:border-white group/link"
-          >
-            <EyeIcon
-              className="h-10 w-10 text-[#ADB7BB] absolute top-1/2 left-1/2 
-                transform -translate-x-1/2 -translate-y-1/2 group-hover/link:text-white
-                cursor-pointer
-                hover:white mr-1
-                "
-            />
-          </Link>
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">

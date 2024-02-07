@@ -30,7 +30,7 @@ const AboutSection = () => {
           <div>
             <Tabs
               defaultValue="account"
-              className="z-0 mt-4  sm:w-[200px] lg:w-[700px]"
+              className="mt-4  sm:w-[200px] lg:w-[400px]"
             >
               <TabsList>
                 <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -59,12 +59,9 @@ const AboutSection = () => {
                 </ul>
               </TabsContent>
               <TabsContent value="skills">
-                <div className="flex flex-wrap gap-2 items-center justify-center">
+                <div className="flex flex-wrap gap-4">
                   {SkillList.map((badge) => (
-                    <SkillBadge 
-                      key={badge.id}
-                      skill={badge.skill}
-                    />
+                    <SkillBadge key={badge.id} skill={badge.skill} />
                   ))}
                 </div>
               </TabsContent>
