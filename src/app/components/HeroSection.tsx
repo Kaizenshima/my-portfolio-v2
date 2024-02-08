@@ -6,12 +6,18 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { Links } from "./constants/Links";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="col-span-7 place-self-center text-center sm:text-left"
+        >
           <h1 className="text-white text-4xl lg:text-6xl mb-4 font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
               Hi, I&apos;m{" "}
@@ -84,9 +90,14 @@ const HeroSection = () => {
               </button>
             </Link>
           </div>
-        </div>
+        </motion.div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-gray-900 w-[270px] h-[270px] lg:w-[400px] lg:h-[400px] relative">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="rounded-full bg-gray-900 w-[270px] h-[270px] lg:w-[400px] lg:h-[400px] relative"
+          >
             <Image
               src={"/images/herosection.png"}
               alt="Hero Section"
@@ -94,7 +105,7 @@ const HeroSection = () => {
               width={300}
               height={300}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
