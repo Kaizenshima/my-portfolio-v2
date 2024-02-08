@@ -30,7 +30,7 @@ const AboutSection = () => {
           <div>
             <Tabs
               defaultValue="account"
-              className="mt-4  sm:w-[200px] lg:w-[400px]"
+              className="mt-4  sm:w-[200px] lg:w-[300px]"
             >
               <TabsList>
                 <TabsTrigger value="skills">Skills</TabsTrigger>

@@ -6,8 +6,8 @@ import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-gray-800 text-gray-300 text-center text-sm sm:text-lg p-6 w-full">
-        <div className="grid grid-cols-3 justify-items-center">
+      <footer className="bg-gray-800 text-gray-300 text-center text-sm sm:text-lg p-6 mx-auto">
+        <div className="grid grid-cols-3 shrink-1 justify-items-center">
           <div className="col-span-1">
             <h1 className="text-1xl">
               Designed and Developed by Ken Yamagishi
