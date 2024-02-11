@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SkillBadge from "./SkillBadge";
 import { SkillList } from "./constants/SkillList";
 
+
 const AboutSection = () => {
   return (
     <section id="about" className="text-white">
